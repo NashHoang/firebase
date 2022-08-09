@@ -1,0 +1,56 @@
+c<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="stylesheet" href="style.css"/>
+
+   
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+
+    
+    <script defer src="init-firebase.js"></script>
+
+   
+    <script defer src="createBlog.js"></script>
+    <title>Fire Messages 2.0</title>
+</head>
+<body>
+    <div id="chatbox-container">
+        <h1 id="title">Submit Posts</h1>        
+
+       
+        
+        
+
+        <div id="typing-container">
+       
+            <form>
+                
+                <div class="input-container">
+                    <label>Username:</label>
+                    <input
+                        type="text"
+                        id="username"
+                    />
+                </div>
+    
+        
+                <div class="input-container">
+                    <label>Message:</label>
+                    <input
+                        type="text"
+                        id="message"
+                    />
+                </div>
+            </form>
+
+            <button id="send-btn"> Post</button>
+        </div>
+    </div>
+</body>
+</html>
